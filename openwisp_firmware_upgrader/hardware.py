@@ -356,6 +356,22 @@ OPENWRT_FIRMWARE_IMAGE_MAP.update(
                     'boards': ('Ubiquiti Picostation M',),
                 },
             ),
+            # Ubiquiti Unifi
+            (
+                'ath79-generic-ubnt_unifi-squashfs-sysupgrade.bin',
+                {
+                    'label': 'Ubiquiti UniFi (OpenWRT 19.07 and later)',
+                    'boards': ('Ubiquiti UniFi',),
+                },
+            ),
+            # Ubiquiti UniFi AC LR ATH79
+            (
+                'ath79-generic-ubnt_unifiac-lr-squashfs-sysupgrade.bin',
+                {
+                    'label': 'Ubiquiti UniFi AC LR (OpenWRT 19.07 and later)',
+                    'boards': ('Ubiquiti UniFi AC LR',),
+                },
+            ),
             # Unifi AC Mesh AR71XX
             (
                 'ar71xx-generic-ubnt-unifiac-mesh-squashfs-sysupgrade.bin',
@@ -405,6 +421,22 @@ OPENWRT_FIRMWARE_IMAGE_MAP.update(
                     'boards': ('Ubiquiti UniFi AC Pro', 'Ubiquiti UniFi-AC-PRO'),
                 },
             ),
+            # Unifi AP Pro ATH79
+            (
+                'ath79-generic-ubnt_unifi-ap-pro-squashfs-sysupgrade.bin',
+                {
+                    'label': 'Ubiquiti UniFi AP Pro (OpenWRT 19.07 and later)',
+                    'boards': ('Ubiquiti UniFi AP Pro',),
+                },
+            ),
+            # Unifi AP Pro AR71XX
+            (
+                'ar71xx-generic-ubnt-uap-pro-squashfs-sysupgrade.bin',
+                {
+                    'label': 'Ubiquiti UniFi AP Pro (OpenWRT 19.07 and earlier)',
+                    'boards': ('Ubiquiti UAP Pro',),
+                },
+            ),
             (
                 'ar71xx-generic-xd3200-squashfs-sysupgrade.bin',
                 {
@@ -451,7 +483,7 @@ OPENWRT_FIRMWARE_IMAGE_MAP.update(
                 'x86-64-generic-squashfs-combined.img.gz',
                 {
                     'label': 'Generic x86/64 (QEMU/KVM)',
-                    'boards': ('x86_64',),
+                    'boards': ('x86_64', 'PC Engines APU2'),
                 },
             ),
             (
@@ -464,8 +496,8 @@ OPENWRT_FIRMWARE_IMAGE_MAP.update(
             (
                 'x86-generic-combined-squashfs.img.gz',
                 {
-                    'label': 'x86 32 bit (various models)',
-                    'boards': ('PC Engines APU2',),
+                    'label': 'Generic x86/32 bit',
+                    'boards': ('x86',),
                 },
             ),
             (
